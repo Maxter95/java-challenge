@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9db1187d-f6b1-43f6-9ba8-cfe5e3ee1bce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.mylyn/repositories.xml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.15.0.20191217-1149.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.rse.core/.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.rse.core/initializerMarks/org.eclipse.rse.internal.core.RSELocalConnectionInitializer.mark" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.tm.terminal.view.ui/.executables/data.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.ui.intro/introstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.metadata/version.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/ServicesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/config/AuditingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/entity/Movies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/entity/RoleName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/entity/audit/DateAudit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/entity/audit/UserDateAudit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/exception/RecordNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/payload/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/payload/JwtAuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/payload/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/payload/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/payload/UserIdentityAvailability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/payload/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/payload/UserSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/security/CurrentUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/security/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/java/com/challenge/services/security/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/src/test/java/com/challenge/services/ServicesApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/services/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/services/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2DoSpEE0F3OUOJs4zB0eMgUfdmg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/pom.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\login spring scurity\java-challenge\services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\login spring scurity\java-challenge" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9db1187d-f6b1-43f6-9ba8-cfe5e3ee1bce" name="Default Changelist" comment="" />
+      <created>1661364124323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661364124323</updated>
+      <workItem from="1661364133253" duration="191000" />
+      <workItem from="1661364437228" duration="1195000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="230" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661365572497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="230" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1661365572497" />
+    <state x="498" y="198" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1661365262306">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="498" y="198" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.816@0.0.1536.816" timestamp="1661365262306" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1661364478004">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1661364478004" />
+  </component>
+</project>
