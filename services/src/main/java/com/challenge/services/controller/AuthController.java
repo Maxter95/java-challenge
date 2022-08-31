@@ -118,15 +118,15 @@ public class AuthController {
             GrantedAuthority currentUserRole = currentUserName.iterator().next();
             User userToUpgrade = userRepository.findByUsername(username);
             if (!(currentUserRole.toString()).equals("ROLE_ADMIN")) {
-                return ("you con't have to permession to upgrade a user");
+                return "you don't have to permession to upgrade a user";
             }else {
 
 
-                Role userRole ;
-                userRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
-                        .orElseThrow(() -> new AppException("User Role not set."));
-                userToUpgrade.setRoles(Collections.singleton(userRole));
 
+                Role userRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
+                        .orElseThrow(() -> new AppException("User Role not set."));
+                userToUpgrade.getRoles().clear();
+                userToUpgrade.getRoles().add(userRole);
                 userRepository.save(userToUpgrade);
                 System.out.println(userToUpgrade.getRoles());
             }
