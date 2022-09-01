@@ -22,18 +22,18 @@ This is a simple project with a challenge for Backend developrs.
 
 Consume the IMDB API (https://imdb-api.com/) and create these features:
 
-- [ ] Create the authentication using JWT
-- [ ] Create two roles ADMIN, USER
-- [ ] Create an endpoint to return the JWT (5 minutes of timeout), receive the username and password
-- [ ] Create an endpoint to consume an API from IMDB and populate your database (you can use WebClient or Feign to consume the API). This API could be called just by the ADMIN user, see @Secured and Roles in Spring Security.
-- [ ] Create an endpoint to create a user, this user will have just a USER role. (The user should have a username and a password)
-- [ ] Create an endpoint to update the permission to this user to ADMIN and/or USER role. This API could be called just by the ADMIN user, see @Secured and Roles in Spring Security.
-- [ ] Create an endpoint to list all the movies.
-- [ ] Create an endpoint to include a movie to the user (favorite list)
-- [ ] Create an endpoint to exclude the movie from the favorite list
-- [ ] Each time the user includes the movie in the favorite list add one "star" to the movie
-- [ ] Create an endpoint to list the top 10 movies, and the movies with more stars.
-- [ ] Create an endpoint to list the favorite movies per user.
+- [X] Create the authentication using JWT
+- [X] Create two roles ADMIN, USER
+- [X] Create an endpoint to return the JWT (5 minutes of timeout), receive the username and password
+- [X] Create an endpoint to consume an API from IMDB and populate your database (you can use WebClient or Feign to consume the API). This API could be called just by the ADMIN user, see @Secured and Roles in Spring Security.
+- [X] Create an endpoint to create a user, this user will have just a USER role. (The user should have a username and a password)
+- [X] Create an endpoint to update the permission to this user to ADMIN and/or USER role. This API could be called just by the ADMIN user, see @Secured and Roles in Spring Security.
+- [X] Create an endpoint to list all the movies.
+- [X] Create an endpoint to include a movie to the user (favorite list)
+- [X] Create an endpoint to exclude the movie from the favorite list
+- [X] Each time the user includes the movie in the favorite list add one "star" to the movie
+- [X] Create an endpoint to list the top 10 movies, and the movies with more stars.
+- [X] Create an endpoint to list the favorite movies per user.
 - [ ]  Don't forget to include Swagger, and the test.
 
 

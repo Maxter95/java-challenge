@@ -6,10 +6,7 @@ import com.challenge.services.entity.Movies;
 import io.restassured.RestAssured;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.configurationprocessor.json.JSONException;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -61,7 +58,7 @@ public class MoviesController {
        int x=0;
         TreeMap<Integer, String> topMovies = new TreeMap<Integer, String>(Collections.reverseOrder());
         TreeMap<Integer, String> top10Movies = new TreeMap<Integer, String>();
-        Set<Movies> moviesList = (Set<Movies>) MovieRepository.findAll();
+        ArrayList<Movies> moviesList = (ArrayList<Movies>) MovieRepository.findAll();
 
         for (Movies m : moviesList){
             topMovies.put(m.getStars(),m.getmName());
@@ -73,6 +70,15 @@ public class MoviesController {
             }
         }
         return topMovies;
+    }
+    @GetMapping(path="/getAllMovies")
+    @CrossOrigin("*")
+    public ArrayList<Movies> getAllMovies() {
+
+        ArrayList<Movies> moviesList = (ArrayList<Movies>) MovieRepository.findAll();
+
+
+        return moviesList;
     }
 
 }
