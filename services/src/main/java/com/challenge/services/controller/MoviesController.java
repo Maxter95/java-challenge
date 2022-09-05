@@ -16,8 +16,7 @@ public class MoviesController {
 
     @Autowired
     MovieDao MovieRepository;
-    @RequestMapping(path="/AddMovies",method= {org.springframework.web.bind.annotation.RequestMethod.POST})
-    @CrossOrigin("*")
+    @RequestMapping(path="/moviesList",method= {org.springframework.web.bind.annotation.RequestMethod.POST})
     public void setMovies() throws IllegalArgumentException, IllegalAccessException, JSONException {
        List<Object> itemM=
                Collections.singletonList(RestAssured
@@ -52,8 +51,7 @@ public class MoviesController {
         }
         return list;
     }
-    @RequestMapping(path="/getTopMovie",method= {RequestMethod.GET})
-    @CrossOrigin("*")
+    @RequestMapping(path="/TopMovie",method= {RequestMethod.GET})
     public TreeMap<Integer, String> getTopMovies() {
        int x=0;
         TreeMap<Integer, String> topMovies = new TreeMap<Integer, String>(Collections.reverseOrder());
@@ -71,8 +69,7 @@ public class MoviesController {
         }
         return topMovies;
     }
-    @GetMapping(path="/getAllMovies")
-    @CrossOrigin("*")
+    @GetMapping(path="/allMovies")
     public ArrayList<Movies> getAllMovies() {
 
         ArrayList<Movies> moviesList = (ArrayList<Movies>) MovieRepository.findAll();

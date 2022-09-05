@@ -2,19 +2,16 @@ package com.challenge.services.controller;
 
 
 import com.challenge.services.dao.MovieDao;
-
-
 import com.challenge.services.dao.UserDao;
 import com.challenge.services.entity.Movies;
 import com.challenge.services.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.Set;
 
 
 @RestController
@@ -24,16 +21,16 @@ public class UserController {
     MovieDao movieRepository;
     @Autowired
     UserDao userRepository;
-    @RequestMapping(path="/AddTofavorite",method= {org.springframework.web.bind.annotation.RequestMethod.PUT})
-    @CrossOrigin("*")
+
+    @RequestMapping(path = "/movieToAdd", method = {org.springframework.web.bind.annotation.RequestMethod.PUT})
     public void addToFavorite(@RequestParam String movieName) {
 
-        Movies mv =movieRepository.findBymName(movieName);
+        Movies mv = movieRepository.findBymName(movieName);
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (!(authentication instanceof AnonymousAuthenticationToken)) {
             String currentUserName = authentication.getName();
             User u = userRepository.findByUsername(currentUserName);
-            mv.setStars(mv.getStars()+1);
+            mv.setStars(mv.getStars() + 1);
             u.getMoviesList().add(mv);
 
             userRepository.save(u);
@@ -41,20 +38,19 @@ public class UserController {
         }
 
 
-
     }
-    @RequestMapping(path="/RemoveFromFavorite",method= {org.springframework.web.bind.annotation.RequestMethod.PUT})
-    @CrossOrigin("*")
+
+    @RequestMapping(path = "/movieToRemove", method = {org.springframework.web.bind.annotation.RequestMethod.PUT})
     public void removeFromFavorite(@RequestParam String movieName) {
 
-        Movies mv =movieRepository.findBymName(movieName);
+        Movies mv = movieRepository.findBymName(movieName);
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (!(authentication instanceof AnonymousAuthenticationToken)) {
             String currentUserName = authentication.getName();
             User u = userRepository.findByUsername(currentUserName);
-           if(mv.getStars()>0) {
-               mv.setStars(mv.getStars() - 1);
-           }
+            if (mv.getStars() > 0) {
+                mv.setStars(mv.getStars() - 1);
+            }
             u.getMoviesList().remove(mv);
 
             userRepository.save(u);
@@ -62,17 +58,17 @@ public class UserController {
         }
 
     }
-    @GetMapping(path="/getAllFavorite")
-    @CrossOrigin("*")
+
+    @GetMapping(path = "/favoriteMovies")
     public Set<Movies> getFavoriteMvList() {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (!(authentication instanceof AnonymousAuthenticationToken)) {
             String currentUserName = authentication.getName();
             User u = userRepository.findByUsername(currentUserName);
-         return u.getMoviesList();
+            return u.getMoviesList();
         }
-            return null;
+        return null;
     }
 
 }

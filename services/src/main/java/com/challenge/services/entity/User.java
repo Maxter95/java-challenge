@@ -58,7 +58,7 @@ public class User extends DateAudit {
 	private Date created;
 
 	@Column(name = "moviesList")
-	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE})
+	@ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.REMOVE})
 	@JoinTable(name = "moviesList", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "id_movie"))
 	private Set<Movies> moviesList = new HashSet<>();
 

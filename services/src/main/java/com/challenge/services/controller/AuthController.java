@@ -10,6 +10,7 @@ import com.challenge.services.security.CurrentUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -109,28 +110,19 @@ public class AuthController {
 
         return ResponseEntity.created(location).body(new ApiResponse(true, "You are successfully registered"));
     }
-    //@RequestMapping(path="/UpgradeUser",method= {RequestMethod.PUT})
-    @PutMapping(path="/UpgradeUser")
+    @PutMapping(path="/userToUpgrade")
+    @Secured("ROLE_ADMIN")
     public String upgradePermission (@RequestParam String username) {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if (!(authentication instanceof AnonymousAuthenticationToken)) {
-            Collection<? extends GrantedAuthority> currentUserName = authentication.getAuthorities();
-            GrantedAuthority currentUserRole = currentUserName.iterator().next();
+
             User userToUpgrade = userRepository.findByUsername(username);
-            if (!(currentUserRole.toString()).equals("ROLE_ADMIN")) {
-                return "you don't have to permession to upgrade a user";
-            }else {
-
-
-
                 Role userRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
                         .orElseThrow(() -> new AppException("User Role not set."));
                 userToUpgrade.getRoles().clear();
                 userToUpgrade.getRoles().add(userRole);
                 userRepository.save(userToUpgrade);
                 System.out.println(userToUpgrade.getRoles());
-            }
-        }
+
+
 
         return username;
     }
