@@ -2,8 +2,11 @@ package com.challenge.services.entity;
 
 import javax.persistence.*;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import org.hibernate.annotations.NaturalId;
-
+@Builder
+@AllArgsConstructor
 @Entity
 @Table(name = "roles")
 public class Role {

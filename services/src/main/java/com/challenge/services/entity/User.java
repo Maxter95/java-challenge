@@ -7,12 +7,17 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NaturalId;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.challenge.services.entity.audit.DateAudit;
 
 @Entity
+@Builder
+@AllArgsConstructor
 @Table(name = "users", uniqueConstraints = {@UniqueConstraint(columnNames = {"username"}),
 		@UniqueConstraint(columnNames = {"email"})})
 
@@ -58,7 +63,7 @@ public class User extends DateAudit {
 	private Date created;
 
 	@Column(name = "moviesList")
-	@ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.REMOVE})
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "moviesList", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "id_movie"))
 	private Set<Movies> moviesList = new HashSet<>();
 

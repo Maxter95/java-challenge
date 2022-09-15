@@ -9,20 +9,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/user")
 public class UserController {
     @Autowired
     MovieDao movieRepository;
     @Autowired
     UserDao userRepository;
 
-    @RequestMapping(path = "/movieToAdd", method = {org.springframework.web.bind.annotation.RequestMethod.PUT})
+    @Transactional
+    @PutMapping(path = "/movie-to-add")
     public void addToFavorite(@RequestParam String movieName) {
 
         Movies mv = movieRepository.findBymName(movieName);
@@ -39,8 +41,8 @@ public class UserController {
 
 
     }
-
-    @RequestMapping(path = "/movieToRemove", method = {org.springframework.web.bind.annotation.RequestMethod.PUT})
+    @Transactional
+    @PutMapping(path = "/movie-to-remove")
     public void removeFromFavorite(@RequestParam String movieName) {
 
         Movies mv = movieRepository.findBymName(movieName);
@@ -59,7 +61,7 @@ public class UserController {
 
     }
 
-    @GetMapping(path = "/favoriteMovies")
+    @GetMapping(path = "/favorite-movies")
     public Set<Movies> getFavoriteMvList() {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

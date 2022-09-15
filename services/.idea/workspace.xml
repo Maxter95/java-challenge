@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,13 +28,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47ca4a55-c3a3-47b3-84a9-da2c606ddda2" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/challenge/services/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_9_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/challenge/services/controller/MovieRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/challenge/services/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/challenge/services/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/challenge/services/controller/MoviesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/challenge/services/controller/MoviesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/challenge/services/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/challenge/services/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/challenge/services/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/challenge/services/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/challenge/services/entity/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/challenge/services/entity/Movies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/challenge/services/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/challenge/services/entity/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/challenge/services/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/challenge/services/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/challenge/services/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/challenge/services/controller/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +72,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,33 +85,52 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2DDf10ow3gHsBz25WzEhDQnsq9g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reactor",
+    "spring.configuration.checksum": "10cd395cf71c18328c863c08e78f3fd0"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.challenge.services.controller" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.challenge.services.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,7 +140,55 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServicesApplication">
+  <component name="RunManager" selected="JUnit.MovieRepositoryTest.saveMovie">
+    <configuration name="MovieRepositoryTest.saveMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.challenge.services.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.challenge.services.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.challenge.services.controller.MovieRepositoryTest" />
+      <option name="METHOD_NAME" value="saveMovie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.getUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.challenge.services.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.challenge.services.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.challenge.services.controller.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="getUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.challenge.services.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.challenge.services.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.challenge.services.controller.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="saveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServicesApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="services" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.challenge.services.ServicesApplication" />
@@ -101,17 +199,27 @@
     <configuration name="ServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="services" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.challenge.services.ServicesApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.MovieRepositoryTest.saveMovie" />
+      <item itemvalue="JUnit.UserRepositoryTest.getUserTest" />
+      <item itemvalue="JUnit.UserRepositoryTest.saveUser" />
       <item itemvalue="Spring Boot.ServicesApplication" />
       <item itemvalue="Spring Boot.ServicesApplication (1)" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MovieRepositoryTest.saveMovie" />
+        <item itemvalue="JUnit.UserRepositoryTest.saveUser" />
+        <item itemvalue="JUnit.UserRepositoryTest.getUserTest" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -138,7 +246,17 @@
       <workItem from="1662050601335" duration="582000" />
       <workItem from="1662067951416" duration="216000" />
       <workItem from="1662114254518" duration="3040000" />
-      <workItem from="1662397329523" duration="637000" />
+      <workItem from="1662397329523" duration="1777000" />
+      <workItem from="1662478238960" duration="7103000" />
+      <workItem from="1662540752033" duration="1398000" />
+      <workItem from="1662645391807" duration="88000" />
+      <workItem from="1662646220596" duration="868000" />
+      <workItem from="1662650068169" duration="681000" />
+      <workItem from="1662652294750" duration="350000" />
+      <workItem from="1662655385159" duration="2507000" />
+      <workItem from="1663082403157" duration="2188000" />
+      <workItem from="1663183649335" duration="548000" />
+      <workItem from="1663252547278" duration="6810000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1661968986190</created>
@@ -151,7 +269,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -163,124 +281,34 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="668" y="300" width="335" height="216" key="#Assign_Data_Sources" timestamp="1661291453346">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="668" y="300" width="335" height="216" key="#Assign_Data_Sources/0.0.1536.816@0.0.1536.816" timestamp="1661291453346" />
-    <state x="395" y="87" key="#Inspections" timestamp="1661871104602">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="395" y="87" key="#Inspections/0.0.1536.816@0.0.1536.816" timestamp="1661871104602" />
-    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661970728865">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1661970728865" />
-    <state x="574" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1661958438931">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="574" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1661958438931" />
-    <state x="551" y="277" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1661870789690">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="551" y="277" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.816@0.0.1536.816" timestamp="1661870789690" />
-    <state width="456" height="466" key="DebuggerActiveHint" timestamp="1661880845052">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="456" height="466" key="DebuggerActiveHint/0.0.1536.816@0.0.1536.816" timestamp="1661880845052" />
-    <state x="549" y="110" key="FileChooserDialogImpl" timestamp="1661790475600">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1661790475600" />
-    <state width="1024" height="208" key="GridCell.Tab.0.bottom" timestamp="1662048658420">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1662048658420" />
-    <state width="1024" height="208" key="GridCell.Tab.0.center" timestamp="1662048658418">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1662048658418" />
-    <state width="1024" height="208" key="GridCell.Tab.0.left" timestamp="1662048658418">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1662048658418" />
-    <state width="1024" height="208" key="GridCell.Tab.0.right" timestamp="1662048658419">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1662048658419" />
-    <state width="1024" height="208" key="GridCell.Tab.1.bottom" timestamp="1662048658420">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1662048658420" />
-    <state width="1024" height="208" key="GridCell.Tab.1.center" timestamp="1662048658420">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1662048658420" />
-    <state width="1024" height="208" key="GridCell.Tab.1.left" timestamp="1662048658420">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1662048658420" />
-    <state width="1024" height="208" key="GridCell.Tab.1.right" timestamp="1662048658420">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1662048658420" />
-    <state width="1024" height="208" key="GridCell.Tab.2.bottom" timestamp="1661971224063">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1661971224063" />
-    <state width="1024" height="208" key="GridCell.Tab.2.center" timestamp="1661971224063">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1661971224063" />
-    <state width="1024" height="208" key="GridCell.Tab.2.left" timestamp="1661971224063">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1661971224063" />
-    <state width="1024" height="208" key="GridCell.Tab.2.right" timestamp="1661971224063">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1024" height="208" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1661971224063" />
-    <state x="299" y="63" key="Maven.ArtifactSearchDialog" timestamp="1661791616481">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="299" y="63" key="Maven.ArtifactSearchDialog/0.0.1536.816@0.0.1536.816" timestamp="1661791616481" />
-    <state x="277" y="53" key="SettingsEditor" timestamp="1661967161347">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="277" y="53" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1661967161347" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1661969021848">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1661969021848" />
-    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1661968703959">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.816@0.0.1536.816" timestamp="1661968703959" />
-    <state x="537" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1662068098109">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="537" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.816@0.0.1536.816" timestamp="1662068098109" />
-    <state x="499" y="159" key="extract.method.dialog" timestamp="1661879149998">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="499" y="159" key="extract.method.dialog/0.0.1536.816@0.0.1536.816" timestamp="1661879149998" />
-    <state x="478" y="141" width="820" height="564" key="find.popup" timestamp="1662047282132">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="478" y="141" width="820" height="564" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1662047282132" />
-    <state x="475" y="166" key="refactoring.ChangeSignatureDialog" timestamp="1661874174695">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="475" y="166" key="refactoring.ChangeSignatureDialog/0.0.1536.816@0.0.1536.816" timestamp="1661874174695" />
-    <state x="425" y="185" key="run.anything.popup" timestamp="1662116917218">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="425" y="185" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1662116917218" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/challenge/services/controller/UserRepositoryTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/challenge/services/controller/UserRepositoryTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/challenge/services/controller/UserRepositoryTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

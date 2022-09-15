@@ -1,9 +1,13 @@
 package com.challenge.services.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-
+@Builder
+@AllArgsConstructor
 @Entity
 @Table(name = "movies")
 public class Movies {
@@ -42,12 +46,6 @@ public class Movies {
     }
 
     public void setStars(int stars) {
-        this.stars = stars;
-    }
-
-    public Movies(Long id, @NotBlank @Size(max = 25) String mName, @NotBlank int stars) {
-        this.id = id;
-        this.mName = mName;
         this.stars = stars;
     }
 
