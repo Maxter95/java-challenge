@@ -49,8 +49,9 @@ public class User extends DateAudit {
 	@Size(max = 100)
 	private String password;
 
-	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+	@ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.PERSIST)
+	@JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
+			inverseJoinColumns = @JoinColumn(name = "role_id") )
 	private Set<Role> roles = new HashSet<>();
 
 
@@ -63,7 +64,7 @@ public class User extends DateAudit {
 	private Date created;
 
 	@Column(name = "moviesList")
-	@ManyToMany(fetch = FetchType.LAZY)
+	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "moviesList", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "id_movie"))
 	private Set<Movies> moviesList = new HashSet<>();
 

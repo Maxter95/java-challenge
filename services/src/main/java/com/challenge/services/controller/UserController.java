@@ -54,7 +54,6 @@ public class UserController {
                 mv.setStars(mv.getStars() - 1);
             }
             u.getMoviesList().remove(mv);
-
             userRepository.save(u);
             movieRepository.save(mv);
         }
@@ -63,14 +62,11 @@ public class UserController {
 
     @GetMapping(path = "/favorite-movies")
     public Set<Movies> getFavoriteMvList() {
-
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if (!(authentication instanceof AnonymousAuthenticationToken)) {
             String currentUserName = authentication.getName();
             User u = userRepository.findByUsername(currentUserName);
             return u.getMoviesList();
-        }
-        return null;
+
     }
 
 }

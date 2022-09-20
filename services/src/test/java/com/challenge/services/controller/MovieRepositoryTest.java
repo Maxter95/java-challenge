@@ -11,11 +11,12 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 
 import java.util.List;
 
-@DataJpaTest
+@SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class MovieRepositoryTest {
 
@@ -42,6 +43,8 @@ class MovieRepositoryTest {
         Assertions.assertThat(movie.getId()).isEqualTo(1L);
 
     }
+    @Test
+    @Order(3)
     public void getListOfUsersTest(){
 
         List<Movies> movies = movieRepository.findAll();

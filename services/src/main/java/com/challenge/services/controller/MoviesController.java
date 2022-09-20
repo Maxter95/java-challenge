@@ -25,23 +25,7 @@ public class MoviesController {
 
     @RequestMapping(path="/movies-list",method= {org.springframework.web.bind.annotation.RequestMethod.POST})
     public void setMovies() throws IllegalArgumentException, JSONException {
-      /* List<Object> itemM=
-               Collections.singletonList(RestAssured
-                       .get("https://imdb-api.com/en/API/MostPopularMovies/k_8hts3c8y")
-                       .as(Object.class));
 
-            Map<String,Object> ss=(Map<String, Object>)itemM.get(0);
-
-      List l = convertObjectToList(ss.values());
-
-        List<Object> object = (List<Object>) l.get(0);
-        for(int i=0;i<=object.size();i++) {
-            Map<String,Object> m=(Map<String,Object>)object.get(i);
-            //System.out.println(m.get("title"));
-            Movies movie= new Movies();
-            movie.setmName(m.get("title").toString());
-            movie.setStars(0);
-            MovieRepository.save(movie);*/
         String json = WebClient.create()
                 .get()
                 .uri("https://imdb-api.com/en/API/MostPopularMovies/k_8hts3c8y")
@@ -60,22 +44,11 @@ public class MoviesController {
         }
 
     }
-    public static List<?> convertObjectToList(Object obj) {
-        List<?> list = new ArrayList<>();
-        if (obj.getClass().isArray()) {
-            list = Arrays.asList((Object[])obj);
-        } else if (obj instanceof Collection) {
-            list = new ArrayList<>((Collection<?>)obj);
-        }
-        return list;
-    }
+
     @RequestMapping(path="/top-movie",method= {RequestMethod.GET})
     public   List<Movies> getTopMovies() {
-       //int x=0;
-       // TreeMap<Integer, String> topMovies = new TreeMap<Integer, String>(Collections.reverseOrder());
         List<Movies> top10Movies = new ArrayList<Movies>() {
         };
-        //ArrayList<Movies> moviesList = (ArrayList<Movies>) MovieRepository.findAll();
         Page<Movies> moviesList = MovieRepository.findAll(
                 PageRequest.of(0, 10, Sort.by(Sort.Order.desc("stars"))));
 

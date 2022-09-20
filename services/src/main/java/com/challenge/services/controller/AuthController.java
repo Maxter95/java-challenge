@@ -62,9 +62,7 @@ public class AuthController {
                         loginRequest.getPassword()
                 )
         );
-
         SecurityContextHolder.getContext().setAuthentication(authentication);
-
         String jwt = tokenProvider.generateToken(authentication);
         Collection<SimpleGrantedAuthority> authorities = (Collection<SimpleGrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();
         HashMap<String, Object> hmap = new HashMap<String, Object>();
@@ -79,15 +77,12 @@ public class AuthController {
             return new ResponseEntity(new ApiResponse(false, "Username already used!"),
                     HttpStatus.BAD_REQUEST);
         }
-
         if(userRepository.existsByEmail(signUpRequest.getEmail())) {
             return new ResponseEntity(new ApiResponse(false, "Email already used!"),
                     HttpStatus.BAD_REQUEST);
         }
-
         User user = new User( signUpRequest.getUsername(),
                 signUpRequest.getEmail(), signUpRequest.getPassword());
-
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setCreated(new Date());
         user.setUpdated(new Date());
@@ -99,15 +94,11 @@ public class AuthController {
         	 userRole = roleRepository.findByName(RoleName.ROLE_ADMIN)
                     .orElseThrow(() -> new AppException("User Role not set."));
         }
-        
         user.setRoles(Collections.singleton(userRole));
-
         User result = userRepository.save(user);
-
         URI location = ServletUriComponentsBuilder
                 .fromCurrentContextPath().path("/api/users/{username}")
                 .buildAndExpand(result.getUsername()).toUri();
-
         return ResponseEntity.created(location).body(new ApiResponse(true, "You are successfully registered"));
     }
     @PutMapping(path="/userToUpgrade")
@@ -121,9 +112,6 @@ public class AuthController {
                 userToUpgrade.getRoles().add(userRole);
                 userRepository.save(userToUpgrade);
                 System.out.println(userToUpgrade.getRoles());
-
-
-
         return username;
     }
 
