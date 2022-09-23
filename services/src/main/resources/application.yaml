@@ -1,0 +1,20 @@
+resilience4j:
+  ratelimiter:
+    instances:
+      processService:
+        limitForPeriod: 1
+        limitRefreshPeriod: 15s
+        timeoutDuration: 1
+        registerHealthIndicator: true
+  circuitbreaker:
+    circuit-breaker-aspect-order: 1
+    instances:
+      myCircuitBreaker:
+        wait-duration-in-open-state: 1m
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-size: 5
+        sliding-window-type: count_based
+        slow-call-duration-threshold: 10s
+        slow-call-rate-threshold: 60
+        failure-rate-threshold: 60
+

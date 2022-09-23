@@ -3,6 +3,7 @@ package com.challenge.services.controller;
 
 import com.challenge.services.dao.MovieDao;
 import com.challenge.services.entity.Movies;
+import com.challenge.services.service.MovieService;
 import io.restassured.RestAssured;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.configurationprocessor.json.JSONArray;
@@ -22,6 +23,8 @@ public class MoviesController {
 
     @Autowired
     MovieDao MovieRepository;
+    @Autowired
+    MovieService movieService;
 
     @RequestMapping(path="/movies-list",method= {org.springframework.web.bind.annotation.RequestMethod.POST})
     public void setMovies() throws IllegalArgumentException, JSONException {
@@ -49,8 +52,7 @@ public class MoviesController {
     public   List<Movies> getTopMovies() {
         List<Movies> top10Movies = new ArrayList<Movies>() {
         };
-        Page<Movies> moviesList = MovieRepository.findAll(
-                PageRequest.of(0, 10, Sort.by(Sort.Order.desc("stars"))));
+        Page<Movies> moviesList = movieService.top10Movies();
 
         for (Movies m : moviesList){
             top10Movies.add(m);
