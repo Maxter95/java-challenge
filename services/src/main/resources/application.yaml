@@ -1,4 +1,16 @@
 resilience4j:
+  retry:
+    instances:
+      myRetry:
+        max-attempts: 3
+        wait-duration: 5s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 1
+        retry-exceptions:
+          - org.springframework.web.client.RestClientException
+
+
+
   ratelimiter:
     instances:
       processService:

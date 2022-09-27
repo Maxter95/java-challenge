@@ -5,6 +5,7 @@ import com.challenge.services.dao.MovieDao;
 import com.challenge.services.entity.Movies;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -24,6 +25,7 @@ public class MovieService {
 
     }
     @CircuitBreaker(name = "myCircuitBreaker",fallbackMethod = "fetchMoviesFailOver")
+   // @Retry(name = "myRetry")
     public  String fetchMovies(){
 
         return  WebClient.create()

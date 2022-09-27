@@ -26,16 +26,10 @@ public class MoviesController {
     @Autowired
     MovieService movieService;
 
-    @RequestMapping(path="/movies-list",method= {org.springframework.web.bind.annotation.RequestMethod.POST})
+    @PostMapping(path="/movies-list")
     public void setMovies() throws IllegalArgumentException, JSONException {
 
-        String json = WebClient.create()
-                .get()
-                .uri("https://imdb-api.com/en/API/MostPopularMovies/k_8hts3c8y")
-                .exchange()
-                .block()
-                .bodyToMono(String.class)
-                .block();
+        String json = movieService.fetchMovies();
         JSONObject obj = new JSONObject(json);
         JSONArray arr = obj.getJSONArray("items");
         for (int i = 0; i < arr.length(); i++)
@@ -48,7 +42,7 @@ public class MoviesController {
 
     }
 
-    @RequestMapping(path="/top-movie",method= {RequestMethod.GET})
+    @GetMapping(path="/top-movie")
     public   List<Movies> getTopMovies() {
         List<Movies> top10Movies = new ArrayList<Movies>() {
         };
